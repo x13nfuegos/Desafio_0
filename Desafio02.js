@@ -41,12 +41,6 @@ function logeo(usuario, _pass){
     alert(`${usuario} :) ¡llegaste bien! vamos a mirar algún plan para salir.`);
 }
 
-// function calcularTotal(valor, personas){
-//     total = valor * personas;
-//     return total;
-//     alert(`El total es de ${total}`);
-// }
-
 function carteleraAgosto(){
     let personas = 0;
     let valor = 0;
@@ -63,17 +57,21 @@ function carteleraAgosto(){
 
         case 2 : alert('GeekParty es un festival que tiene música en vivo, streetart y muchos recuerdos de los ´80, en el Museo Comunitario de Sur');
                  personas = Number(prompt("Cuantas personas son: "));
-                 valor = 500
+                 valor = 800
                  break;
 
         case 3 : alert('Puerto Piojo es un Documental 360, sobre la última playa de Buenos Aires, a parrir de las 20 hs en Banchero de La Boca.');
                  cantidad = Number(prompt("Cuantas personas son: "));
-                 valor = 500
+                 valor = 600
+                 total = calcularTotal(valor, personas);
+                 alert(`Total a pagar: $${total} `);
                  break;
 
         case 4 : alert('Tour Isla Maciel es una experiencia única y artística. Un recorrido guiado por lo murales más importantes de la Isla. A partir de las 10 de la mañana.');
                  cantidad = Number(prompt("Cuantas desea llevar?"));
                  valor = 500
+                 total = calcularTotal(valor, personas);
+                 alert(`Total a pagar: $${total} `);
                  break;
         
         default : alert("!Algo salió mal¡"); 
